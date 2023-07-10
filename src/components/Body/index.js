@@ -3,6 +3,7 @@ import AboutMe from "../AboutMe";
 import BodyContent from "../BodyContent";
 import Portfolio from "../Portfolio";
 import ContactMe from "../ContactMe";
+import Homepage from "../Homepage";
 
 function Body({ currentPage }) {
   const renderPage = () => {
@@ -13,6 +14,8 @@ function Body({ currentPage }) {
         return <Portfolio />;
       case "contactMe":
         return <ContactMe />;
+      case "homepage":
+        return <Homepage />;
     }
   };
   return (

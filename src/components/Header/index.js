@@ -1,15 +1,33 @@
 import React from "react";
 
-function Header() {
+function Header({ handlePageChange }) {
   return (
     <div>
       <header>
-        <h1>Portfolio</h1>
+        <h1>Griffin Pelletier's Portfolio</h1>
         <nav>
           <ul>
-            <li>About Me</li>
-            <li>Portfolio</li>
-            <li>Contact Me</li>
+            <button
+              type="button"
+              class="btn"
+              onClick={() => handlePageChange("aboutMe")}
+            >
+              About Me
+            </button>
+            <button
+              type="button"
+              class="btn"
+              onClick={() => handlePageChange("portfolio")}
+            >
+              Portfolio
+            </button>
+            <button
+              type="button"
+              class="btn"
+              onClick={() => handlePageChange("contactMe")}
+            >
+              Contact Me
+            </button>
           </ul>
         </nav>
       </header>

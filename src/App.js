@@ -6,11 +6,15 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("aboutMe");
+  const [currentPage, setCurrentPage] = useState("homepage");
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header handlePageChange={handlePageChange} />
       <Body currentPage={currentPage}></Body>
       <Footer></Footer>
     </div>
