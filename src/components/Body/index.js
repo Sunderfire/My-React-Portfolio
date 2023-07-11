@@ -1,9 +1,10 @@
 import React from "react";
+import "./body.css";
 import AboutMe from "../AboutMe";
 import BodyContent from "../BodyContent";
 import Portfolio from "../Portfolio";
 import ContactMe from "../ContactMe";
-import Homepage from "../Homepage";
+import Resume from "../Resume";
 
 function Body({ currentPage }) {
   const renderPage = () => {
@@ -14,12 +15,12 @@ function Body({ currentPage }) {
         return <Portfolio />;
       case "contactMe":
         return <ContactMe />;
-      case "homepage":
-        return <Homepage />;
+      case "resume":
+        return <Resume />;
     }
   };
   return (
-    <div>
+    <div class="body">
       <BodyContent>{renderPage()}</BodyContent>
     </div>
   );

@@ -1,11 +1,12 @@
 import React from "react";
+import "./header.css";
 
 function Header({ handlePageChange }) {
   return (
     <div>
-      <header>
+      <header class="header">
         <h1>Griffin Pelletier's Portfolio</h1>
-        <nav>
+        <nav class="nav">
           <ul>
             <button
               type="button"
@@ -27,6 +28,13 @@ function Header({ handlePageChange }) {
               onClick={() => handlePageChange("contactMe")}
             >
               Contact Me
+            </button>
+            <button
+              type="button"
+              class="btn"
+              onClick={() => handlePageChange("resume")}
+            >
+              Resume
             </button>
           </ul>
         </nav>

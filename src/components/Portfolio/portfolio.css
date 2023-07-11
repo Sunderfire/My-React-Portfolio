@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    
+}
+img {
+   width: 100%; 
+    
+}
+
+ul {
+    list-style: none;
+}
