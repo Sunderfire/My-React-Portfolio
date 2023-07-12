@@ -1,0 +1,9 @@
+.aboutMe {
+    display: flex;
+    justify-content: flex-start;
+    font-size: larger;
+}
+
+.aboutMe img {
+    height: 50%;
+}

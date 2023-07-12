@@ -1,0 +1,7 @@
+.footer {
+    border: 10px solid #586F6B;
+    background-color: #DDD5D0;
+    display: flex;
+    justify-content: space-around;
+}
+
